@@ -1,0 +1,294 @@
+            html {
+                height: 100%;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Montserrat';
+                height: 100%;
+            }
+
+            #mainPageContainer {
+                background-color: white;
+                height: 100%;
+                width: 100%;
+
+            }
+
+            #leftMenuContainer {
+                position: fixed;
+                float: left;
+                height: 100%;
+                width: 19%;
+                text-align: right;
+                font-size: 25px;
+                letter-spacing: 5px;
+            }
+
+            #navList {
+
+                font-size: 13px;
+                font-weight: 400;
+                font-family: 'Montserrat';
+                letter-spacing: 0px;
+
+            }
+
+            #navListAboutMePage {
+                font-size: 16px;
+                font-weight: 400;
+                font-family: 'Montserrat';
+                letter-spacing: 0px;
+                margin-top: 50px;
+            }
+
+            #quote {
+                padding-left: 50px;
+            }
+
+            a:link {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:visited {
+                text-decoration: none;
+                color: black;
+            }
+
+            #contactMeBtn {
+
+                background: none;
+                border: none;
+                font-size: 13px;
+                font-weight: 400;
+                font-family: 'Montserrat';
+                letter-spacing: 0px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                padding: 0px;
+                line-height: 0px;
+                outline: none;
+
+
+            }
+
+
+
+
+            a:hover {
+                color: gray;
+                text-decoration: underline;
+            }
+
+            button:hover {
+                color: gray;
+            }
+
+
+            #orderBtn {
+                background: none;
+                position: relative;
+                top: -25px;
+                border: none;
+                font-size: 13px;
+                font-weight: 400;
+                font-family: 'Montserrat';
+                letter-spacing: 0px;
+                padding: 0px;
+                line-height: 0px;
+                margin-top: 10px;
+                outline: none;
+
+            }
+
+            #orderBtn:hover {
+                text-decoration: underline;
+            }
+
+            button:active {
+                outline: 0;
+                border: none;
+            }
+
+            #instagram-logo {
+                padding-left: 132px;
+                height: 30px;
+            }
+
+            #menuContainer {
+                float: right;
+                width: 80%;
+                height: 100%;
+                margin: 0;
+            }
+
+            #firstRow {
+
+                float: left;
+                height: 100%;
+                width: 50%;
+            }
+
+            #secondRow {
+                float: left;
+                height: 100%;
+                width: 50%;
+            }
+
+            .menuPicsFirstRow {
+                width: 97%;
+                margin-left: 2%;
+                margin-top: 2%;
+                display: block;
+            }
+
+            .menuPicsSecondRow {
+                width: 97%;
+                margin-left: 1%;
+                margin-right: 1%;
+                margin-top: 2%;
+                display: block;
+            }
+
+            .container {
+                position: relative;
+                width: 100%;
+            }
+
+            .image {
+                opacity: 1;
+                display: block;
+                width: 97%;
+                height: auto;
+                transition: .5s ease;
+                backface-visibility: hidden;
+            }
+
+            .middle {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            .container:hover .image {
+                opacity: 0.3;
+            }
+
+            .container:hover .middle {
+                opacity: 1;
+            }
+
+
+            .text {
+                color: black;
+                font-size: 30px;
+                font-weight: 600;
+                padding: 16px 32px;
+            }
+
+
+
+            #myOrderForm {
+                display: none;
+                position: fixed;
+                margin-left: 30%;
+                margin-top: 10%;
+                width: 50%;
+                opacity: 0.9;
+                font-size: 15px;
+                letter-spacing: 0px;
+                background-color: beige;
+                padding-bottom: 20px;
+                padding-left: 20px;
+                padding-right: 10px;
+                text-align: left;
+                height: 55%;
+                z-index: 20;
+                border-radius: 25px;
+
+            }
+
+            #closeOrderForm {
+                background: none;
+                border: none;
+                float: right;
+                font-size: 20px;
+                padding-right: 10px;
+                padding-top: -10px;
+                color: gray;
+            }
+
+            #closeOrderForm:hover {
+                text-decoration: underline;
+            }
+
+            h1 {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            h3 {
+                font-weight: 400;
+                font-size: 15px;
+            }
+
+
+            .inputBox {
+                width: 95%;
+                margin-top: 10px;
+                padding: 2%;
+                font-size: 14px;
+            }
+
+            #sendBtn {
+                margin-top: 15px;
+                width: 55px;
+                font-size: 16px;
+                border: none;
+                border-bottom-style: groove;
+                border-radius: 25px;
+
+            }
+
+            #myContactForm {
+                display: none;
+                position: fixed;
+                margin-left: 30%;
+                margin-top: 10%;
+                width: 50%;
+                opacity: 1;
+                border-style: solid;
+
+                background-color: white;
+                padding-bottom: 20px;
+                padding-left: 20px;
+                padding-right: 10px;
+                text-align: left;
+                height: 60%;
+                z-index: 30;
+                border-radius: 25px;
+
+
+            }
+
+            #closeContactForm {
+                background: none;
+                border: none;
+                float: right;
+                font-size: 20px;
+                padding-right: 10px;
+                padding-top: -10px;
+                color: gray;
+            }
+
+
+            #closeContactForm:hover {
+                text-decoration: underline;
+            }
