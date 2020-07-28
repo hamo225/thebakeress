@@ -1,0 +1,237 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+    <title>the BAKERESS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/CSS/mainPage.css">
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+    <div class="contactFormPopup" id="myContactForm">
+        <form action="/PHP/index.php" method="POST">
+            <button id="closeContactForm">X</button>
+
+            <h1>CONTACT US!</h1>
+            <H3>Send us a message and we’ll get back to you as soon as possible. <br>
+                <P>Looking forward to hearing from you!</P>
+            </H3>
+
+            <div class="form-group">
+                <label for="name"><b></b></label>
+                <input type="text" placeholder="Enter Your Name" name="name" class="inputBox" required>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="email"><b></b></label>
+                <input type="email" placeholder="Enter Email" name="email" required class="inputBox">
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="tel"><b></b></label>
+                <input type="tel" placeholder="Enter your phone number" name="tel" class="inputBox">
+            </div>
+
+            <br>
+
+            <label for="message"><b></b></label>
+            <textarea placeholder="Message" name="message" required class="inputBox"></textarea>
+            <br>
+            <button type="send" class="btn" id="sendBtn">SEND</button>
+
+        </form>
+    </div>
+
+    <div class="orderFormPopup" id="myOrderForm">
+        <form action="/PHP/index.php" method="POST">
+            <button id="closeOrderForm">X</button>
+
+            <h1>Order Form</h1>
+
+            <div class="form-group">
+                <label for="products">What would you like to order</label>
+                <select id="products" name="products" required multiple></select>
+            </div>
+
+            <br>
+            <div class="form-group">
+                <label for="name"></label>
+                <input type="text" placeholder="Enter Your Name" name="name" class="inputBox" required>
+            </div>
+
+            <br>
+            <div class="form-group">
+                <label for="tel"></label>
+                <input type="tel" placeholder="Enter your phone number" name="tel" class="inputBox">
+            </div>
+
+            <br>
+            <div class="form-group">
+                <label for="email"></label>
+                <input type="email" placeholder="Enter Email" name="email" class="inputBox" required>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="date"></label>
+                <input type="date" placeholder="Enter Date" name="date" class="inputBox" required>
+            </div>
+
+            <br>
+            <button type="submit" class="btn">Submit Order</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+
+    <div id="mainPageContainer">
+
+        <div id="leftMenuContainer">
+
+
+            <p> <a href="/HTML/index.html">THE <br>BAKERESS</a></p>
+
+            <div id="navList">
+                <a href="/HTML/Mainpage.html">
+                    <p>OUR MENU</p>
+                </a>
+                <a href="/HTML/Mainpage.html">
+                    <p>GALLERY</p>
+                </a>
+                <a href="/HTML/Aboutme.html">
+                    <p>ABOUT ME</p>
+                </a>
+                <button id="contactMeBtn">
+                    <p>CONTACT US</p>
+                </button>
+                <br>
+                <button id="orderBtn" style="color: green;font-size: 15px">
+                    <p style="font-size: 25px;;">COMING SOON!</p>
+                    <p>ORDER ONLINE</p>
+                </button>
+            </div>
+
+
+            <div> <a href="https://www.instagram.com/sarah_the_bakeress/">
+                    <img id="instagram-logo" src="/Gallery/Instagram Link logo.png"> </a></div>
+
+
+        </div>
+
+
+        <div id="menuContainer">
+
+            <div id="firstRow">
+                <div class="container">
+                    <img class="menuPicsFirstRow image" src="/Gallery/Pancake.JPG">
+                    <div class="middle">
+                        <div class="text">PANCAKESSSS😋</div>
+
+                    </div>
+
+                </div>
+
+                <div class="container">
+                    <img class="menuPicsFirstRow image" src="/Gallery/Chocolate Truffles.JPG">
+                    <div class="middle">
+                        <div class="text">CHOCOLATE TRUFFLES😋</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="menuPicsFirstRow image" src="/Gallery/Pastry Plate 1.JPG">
+                    <div class="middle">
+                        <div class="text">White chocolate mousse on a thin layer of tempered chocolate mixed with olive
+                            oil, topped with a honey glazed pecan 😋</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="menuPicsFirstRow image" src="/Gallery/Croissant.JPG">
+                    <div class="middle">
+                        <div class="text">CROISSANTS ARE THE BEST 😋</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="menuPicsFirstRow image" src="/Gallery/Foccacia Bread from Top.JPG">
+                    <div class="middle">
+                        <div class="text">FOCCACIA BREAD!!!!!😋</div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div id="secondRow">
+
+
+                <div class="container">
+                    <img class="menuPicsSecondRow image" src="/Gallery/Chocolate pastry.JPG">
+                    <div class="middle">
+                        <div class="text">What I need right now 😋😋</div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img class="menuPicsSecondRow image" src="/Gallery/Bread cut on side.jpg">
+                    <div class="middle">
+                        <div class="text">STRAIGHT FROM THE OVEN😋</div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img class="menuPicsSecondRow image" src="/Gallery/Nougat.JPG">
+                    <div class="middle">
+                        <div class="text">“Cantucci e Vin Santo” which is considered the perfect ending to a delicious
+                            meal and one of Italy’s most famous traditions. Gotta love Italian traditions 😄! Up for
+                            some pairing?😋</div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img class="menuPicsSecondRow image" src="/Gallery/Bread and butter.JPG">
+                    <div class="middle">
+                        <div class="text">BREAD & BUTTER😋</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/JS/index.js"></script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
