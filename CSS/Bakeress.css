@@ -6,6 +6,7 @@ body,
 html {
     margin: 0;
     padding: 0;
+    height: 100vh;
     background-color: black;
     font-family: 'Montserrat';
 }
@@ -23,7 +24,6 @@ html {
 
 .main_section__video {
     height: 80vh;
-    background-color: aqua;
     text-align: center;
     position: relative;
 }
