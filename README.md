@@ -1,8 +1,7 @@
 # thebakeress
-A bakers merchant online shop
+A Bakers merchant shop
 
-
-- ordering capability
-- contact form 
-- newsletter 
-- PayPal 
+- Customers are able to make an order - Paypal/stripe functionality
+- Customers are able to contact the bakery by using a built in contact form 
+- Customers sign up for a Monthly newsletter
+- Customers can view a menu selection of baked goods
