@@ -196,6 +196,27 @@ h4 {
 
 }
 
+.menu__menu-items li:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.add-to-cart-btn {
+    margin-left: 1rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+
+}
+
+.add-to-cart-btn:focus {
+    display: none;
+}
+
+.add-to-cart-btn:hover {
+    color: green;
+}
+
 hr {
     width: 50%;
     margin-top: 2rem;
@@ -254,90 +275,53 @@ hr {
 
 
 
-#myOrderForm {
-    display: none;
-    position: fixed;
-    margin-left: 30%;
-    margin-top: 10%;
-    width: 50%;
-    opacity: 0.9;
-    font-size: 15px;
-    letter-spacing: 0px;
-    background-color: beige;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 10px;
-    text-align: left;
-    height: 55%;
-    z-index: 20;
-    border-radius: 25px;
-
-}
-
-#closeOrderForm {
-    background: none;
-    border: none;
-    float: right;
-    font-size: 20px;
-    padding-right: 10px;
-    padding-top: -10px;
-    color: gray;
-}
-
-#closeOrderForm:hover {
-    text-decoration: underline;
-}
-
-
 .inputBox {
-    width: 95%;
+    width: 100%;
     margin-top: 10px;
     padding: 2%;
     font-size: 14px;
 }
 
 #sendBtn {
-    margin-top: 15px;
-    width: 55px;
-    font-size: 16px;
-    border: none;
-    border-bottom-style: groove;
-    border-radius: 25px;
-
-}
-
-#myContactForm {
-    display: none;
-    position: fixed;
-    margin-left: 30%;
-    margin-top: 10%;
-    width: 50%;
-    opacity: 1;
     border-style: solid;
+    border-color: black;
 
     background-color: white;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 10px;
-    text-align: left;
-    height: 60%;
-    z-index: 30;
-    border-radius: 25px;
+}
 
+.contact-form {
+    width: 79%;
+    height: 100%;
+    display: flex;
+    text-align: start;
+    margin-top: 5rem;
+}
+
+.myContactForm {
+    width: 90%;
+    display: flex;
+    justify-content: center;
 
 }
 
-#closeContactForm {
-    background: none;
-    border: none;
-    float: right;
-    font-size: 20px;
-    padding-right: 10px;
-    padding-top: -10px;
-    color: gray;
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
 }
 
-
-#closeContactForm:hover {
-    text-decoration: underline;
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: #43A047;
 }

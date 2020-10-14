@@ -17,88 +17,6 @@
 
 <body>
 
-    <!-- Contact Form -->
-    <div class="contactFormPopup" id="myContactForm">
-        <form action="/PHP/index.php" method="POST">
-            <button id="closeContactForm">X</button>
-
-            <h1>CONTACT US!</h1>
-            <H3>Send us a message and we’ll get back to you as soon as possible. <br>
-                <P>Looking forward to hearing from you!</P>
-            </H3>
-
-            <div class="form-group">
-                <label for="name"><b></b></label>
-                <input type="text" placeholder="Enter Your Name" name="name" class="inputBox" required>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <label for="email"><b></b></label>
-                <input type="email" placeholder="Enter Email" name="email" required class="inputBox">
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <label for="tel"><b></b></label>
-                <input type="tel" placeholder="Enter your phone number" name="tel" class="inputBox">
-            </div>
-
-            <br>
-
-            <label for="message"><b></b></label>
-            <textarea placeholder="Message" name="message" required class="inputBox"></textarea>
-            <br>
-            <button type="send" class="btn" id="sendBtn">SEND</button>
-
-        </form>
-    </div>
-
-    <!-- Order Form -->
-    <div class="orderFormPopup" id="myOrderForm">
-        <form action="/PHP/index.php" method="POST">
-            <button id="closeOrderForm">X</button>
-
-            <h1>Order Form</h1>
-
-            <div class="form-group">
-                <label for="products">What would you like to order</label>
-                <select id="products" name="products" required multiple></select>
-            </div>
-
-            <br>
-            <div class="form-group">
-                <label for="name"></label>
-                <input type="text" placeholder="Enter Your Name" name="name" class="inputBox" required>
-            </div>
-
-            <br>
-            <div class="form-group">
-                <label for="tel"></label>
-                <input type="tel" placeholder="Enter your phone number" name="tel" class="inputBox">
-            </div>
-
-            <br>
-            <div class="form-group">
-                <label for="email"></label>
-                <input type="email" placeholder="Enter Email" name="email" class="inputBox" required>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <label for="date"></label>
-                <input type="date" placeholder="Enter Date" name="date" class="inputBox" required>
-            </div>
-
-            <br>
-            <button type="submit" class="btn">Submit Order</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-        </form>
-    </div>
-
 
 <main class="main_section">
 
@@ -119,7 +37,7 @@
             <a href="/HTML/Aboutme.html">
                 <p>ABOUT ME</p>
             </a>
-            <a #contactMeBtn >
+            <a href="/HTML/contact.html" #contactMeBtn >
                 <p>CONTACT US</p>
             </a>
             <br>
