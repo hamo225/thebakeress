@@ -502,8 +502,9 @@ nav a {
     }
 
     img {
-        height: 6rem;
-        margin: 0.5rem;
+        height: 15rem;
+        width: auto;
+        margin: 0.2rem;
         opacity: 1;
         transition: .5s ease;
         backface-visibility: hidden;
