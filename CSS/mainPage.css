@@ -322,9 +322,10 @@ hr {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     display: none;
     width: 100vw;
-    padding: 1rem;
+    height: 8vh;
 }
 
 header,
@@ -365,6 +366,19 @@ nav a {
 
     header {
         display: flex;
+        padding: 2rem 0;
+
+    }
+
+    .title-nav-bar {
+        line-height: 20px;
+
+    }
+
+    .title-nav-bar,
+    a {
+        padding-left: 1.3rem;
+        font-size: 2.5vw;
     }
 
     .main_section__side-nav {
@@ -380,12 +394,12 @@ nav a {
     }
 
     nav {
-        position: static;
         display: flex;
         background: none;
         clear: none;
         flex: 1;
         justify-content: flex-end;
+        padding-right: 2rem;
     }
 
     nav:hover {
@@ -399,15 +413,59 @@ nav a {
 
 @media only screen and (max-width: 600px) {
     .title-nav-bar {
-        font-size: 4vw;
-        font-weight: 500;
+        font-weight: 600;
+        line-height: 15px;
+        padding-left: 1rem;
+
+
+    }
+
+    .title-nav-bar a {
+        font-size: 3vw;
+        padding-left: 0rem;
+
     }
 
     header a {
         font-size: 2.2vw;
+
     }
 
     header {
-        padding: .3rem;
+        padding: .5rem 0;
+
+    }
+
+    .menu__title p {
+        font-size: 3vw;
+    }
+
+    .menu__title h4 {
+        font-size: 2vw;
+
+    }
+
+    .menu__title {
+        margin-bottom: 0;
+        padding-top: 1rem;
+        height: 15%;
+    }
+
+    hr {
+        width: 50%;
+        margin-top: 0rem;
+    }
+
+    .menu__menu-items {
+        padding-top: 2rem;
+    }
+
+    .menu__menu-items li {
+        font-size: 0.7rem;
+        padding: 0;
+    }
+
+    .add-to-cart-btn {
+        margin-left: 0.3rem;
     }
 }
