@@ -7,6 +7,7 @@ html {
     margin: 0;
     padding: 0;
     height: 100vh;
+    width: 100vw;
     background-color: black;
     font-family: 'Montserrat';
 }
@@ -17,7 +18,7 @@ html {
 }
 
 .main_section__header {
-    min-width: 100%;
+    width: 100vw;
     background-color: black;
     height: 10vh;
 }
@@ -31,14 +32,14 @@ html {
 #my-video {
     z-index: -99;
     height: 80vh;
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
     overflow: hidden;
     display: block;
 }
 
 .main_section__footer {
-    min-width: 100%;
+    width: 100vw;
     background-color: black;
     height: 10vh;
 }
@@ -59,7 +60,6 @@ html {
 
 #title-box {
 
-    width: 42vw;
     padding-left: 50px;
     padding-right: 12px;
     padding-top: 20px;
@@ -88,92 +88,18 @@ a {
 }
 
 
+@media only screen and (max-width: 400px) {
 
 
+    #title-box {
 
+        padding: 0px;
+        z-index: 20;
+        letter-spacing: 19px;
+        font-size: 1.3rem;
+        border-style: none;
+        border-width: 2px;
 
-
-
-
-
-
-
-/* This css is for the about me page */
-
-#aboutMePage {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat';
-}
-
-
-#aboutMeContainer {
-    width: 30%;
-    height: 100%;
-    padding-left: 30;
-    float: left;
-    position: fixed;
-    text-align: right;
-
-
-
-}
-
-
-#sarah-at-school {
-    height: 290px;
-    padding: 6px;
-
-}
-
-
-#sarah-in-forest {
-    height: 420px;
-    padding: 6px;
-
-}
-
-#sarah-walking-forest {
-    height: 420px;
-    padding: 6px;
-    float: left
-}
-
-
-#school {
-    height: 390px;
-    padding: 6px;
-
-}
-
-
-
-#title {
-    margin-left: 0;
-    font-size: 25;
-    padding-top: 20;
-    text-align: right;
-    font-family: 'Montserrat';
-
-
-}
-
-#aboutMeText {
-    font-size: 17;
-    padding-right: 60;
-    padding-left: 65;
-
-}
-
-
-#instagram-logo2 {
-    height: 40;
-    padding-left: 280;
-}
-
-#rightContainer {
-    float: right;
-    width: 66%;
-    height: 100%;
+    }
 
 }

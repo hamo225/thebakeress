@@ -1,5 +1,10 @@
 * {
     box-sizing: border-box;
+
+}
+
+p {
+    font-size: 1.5vw;
 }
 
 body,
@@ -31,13 +36,12 @@ html {
     position: fixed;
 }
 
-#title-nav-bar {
-    font-size: 1.5rem;
-}
+.title-nav-bar {
+    font-size: 2.3vw;
+    line-height: 30px;
+    text-align: right;
+    font-weight: 550;
 
-.main_section__nav-list {
-    font-size: 0.9rem;
-    font-weight: 400;
 }
 
 a:link {
@@ -136,7 +140,7 @@ img {
 }
 
 .text {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     color: black;
     font-weight: 600;
     padding: 16px 32px;
@@ -152,13 +156,12 @@ img {
 }
 
 .main_section__menu {
-    width: 55vw;
+    width: 79vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgb(240, 229, 229);
-
+    background-color: rgb(235, 238, 240)
 }
 
 .menu__title {
@@ -205,7 +208,6 @@ h4 {
     margin-left: 1rem;
     border-radius: 20px;
     border: none;
-    font-size: 1rem;
 
 }
 
@@ -244,42 +246,15 @@ hr {
 .main_section__shoppingcart {
     display: flex;
     /* background-color: brown; */
-    width: 25vw;
+    width: 15vw;
     justify-content: center;
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .inputBox {
     width: 100%;
     margin-top: 10px;
     padding: 2%;
-    font-size: 14px;
 }
 
 #sendBtn {
@@ -337,5 +312,102 @@ hr {
 
 .coming-soon h2 {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 3vw;
+}
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+    width: 100vw;
+    padding: 1rem;
+}
+
+header,
+a {
+    font-size: 2vw;
+}
+
+.hamburger {
+    padding: 0 0.5em;
+    font-size: 1.5em;
+    line-height: 50px;
+    display: inline-block;
+    z-index: 2;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    background: #eee;
+    display: none;
+}
+
+nav:hover {
+    display: block;
+}
+
+nav a {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+}
+
+.hamburger:hover~nav {
+    display: block;
+}
+
+@media only screen and (max-width: 800px) {
+
+    header {
+        display: flex;
+    }
+
+    .main_section__side-nav {
+        display: none;
+    }
+
+    .main_section__menu {
+        width: 100vw;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        display: flex;
+        background: none;
+        clear: none;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    nav:hover {
+        display: flex;
+    }
+
+    nav a {
+        padding: 0 1em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title-nav-bar {
+        font-size: 4vw;
+        font-weight: 500;
+    }
+
+    header a {
+        font-size: 2.2vw;
+    }
+
+    header {
+        padding: .3rem;
+    }
 }
