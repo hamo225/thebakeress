@@ -4,7 +4,7 @@
 }
 
 p {
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 body,
@@ -34,14 +34,26 @@ html {
 
 .sticky-side-nav {
     position: fixed;
+
+}
+
+.side-nav-inner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .title-nav-bar {
-    font-size: 2.3vw;
     line-height: 30px;
     text-align: right;
     font-weight: 550;
 
+}
+
+.title-nav-bar,
+a {
+    font-size: 1.7vw;
 }
 
 a:link {
@@ -84,11 +96,6 @@ h2 {
 h3 {
     background: none;
     border: none;
-}
-
-#instagram-logo {
-    height: 30px;
-    margin-top: 2rem;
 }
 
 button:active {
@@ -385,6 +392,17 @@ nav a {
     display: block;
 }
 
+.footer_non-mobile {
+    padding-bottom: 3rem;
+}
+
+.footer_mobile {
+    display: none;
+    justify-content: center;
+
+}
+
+
 @media only screen and (max-width: 800px) {
 
     header {
@@ -432,6 +450,24 @@ nav a {
     nav a {
         padding: 0 1em;
     }
+
+    .footer_mobile {
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .footer_mobile #footertext {
+        margin-left: 2rem;
+    }
+
+    .footer_mobile,
+    i {
+        font-size: 2rem;
+    }
+
+
 }
 
 @media only screen and (max-width: 600px) {
