@@ -92,14 +92,23 @@ a {
 
 
     #title-box {
-
-        padding: 0px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: white;
+        text-align: center;
         z-index: 20;
         letter-spacing: 12px;
         font-size: 1.1rem;
         border-style: none;
         border-width: 2px;
 
+    }
+
+
+    #titleText {
+        color: black;
+        text-align: center;
     }
 
 }
