@@ -19,7 +19,6 @@ html {
     height: 100vh;
     width: 100vw;
     display: flex;
-    text-align: right;
 
 }
 
@@ -27,6 +26,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    text-align: right;
     width: 21vw;
     height: 100vh;
     padding: 1rem;
@@ -48,7 +48,13 @@ html {
     line-height: 30px;
     text-align: right;
     font-weight: 550;
+    z-index: 100;
 
+}
+
+.topnavbar {
+    display: flex;
+    flex-direction: column;
 }
 
 .title-nav-bar,
@@ -359,11 +365,13 @@ nav a {
 
 .footer_non-mobile {
     padding-bottom: 3rem;
+    z-index: 100;
 }
 
 .footer_mobile {
     display: none;
-    justify-content: center;
+    display: flex;
+    justify-content: end;
 
 }
 
@@ -391,8 +399,14 @@ nav a {
         display: none;
     }
 
+    .main_section {
+        display: flex;
+        flex-direction: column;
+    }
+
     .main_section__menu {
         width: 100vw;
+        height: 100%;
     }
 
     .hamburger {
@@ -416,9 +430,11 @@ nav a {
         padding: 0 1em;
     }
 
+
+
     .footer_mobile {
         display: flex;
-        padding: 2rem;
+        padding: 1rem;
         justify-content: center;
         width: 100vw;
     }
@@ -429,7 +445,7 @@ nav a {
 
     .footer_mobile,
     i {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
 
