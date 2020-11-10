@@ -20,6 +20,11 @@
 //     font-weight: 300;
 //     line-height: 1.6;
 // }
+:root {
+    --font-family: 'Montserrat';
+
+}
+
 
 *,
 *::before,
@@ -35,5 +40,30 @@ html {
 }
 
 body {
-    font-family: 'Montserrat';
+    font-family: var(--font-family);
+}
+
+
+.heading-1 {
+    line-height: 30px;
+    text-align: right;
+    font-weight: 550;
+    z-index: 100;
+}
+
+.heading-2 {}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: none;
 }
