@@ -11,115 +11,153 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/146885b278.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="/CSS/mainPage.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
 
 </head>
 
 
-<body>
+    <body>
 
     <!-- for mobile -->
-    <header>
-        <a href="/index.html" class="title-nav-bar"> THE <br> BAKERESS</a>
-        <i class="fa fa-bars hamburger"></i>
-        <nav id="menu">
+        <header>
+            <a href="/index.html" class="title-nav-bar"> THE <br> BAKERESS</a>
+            <i class="fa fa-bars hamburger"></i>
+            <nav id="menu">
+                
+            <a href="/menu.html">OUR MENU</a>
+            <a href="/gallery.html">GALLERY</a>
+            <a href="/Aboutme.html">ABOUT ME</a>
+            <a href="/contact.html">CONTACT US</a>
+            </nav>
+        </header>
+
+        <main class="main_section main_section__menu_page">
+
+            <section class="main_section__side-nav">
+                <div class="sticky-side-nav">
+                <div class="side-nav-inner">
+                    <div class="topnavbar">
+                    <p><a href="index.html" class="title-nav-bar">THE <br>BAKERESS</a></p>
             
-          <a href="/menu.html">OUR MENU</a>
-          <a href="/gallery.html">GALLERY</a>
-          <a href="/Aboutme.html">ABOUT ME</a>
-          <a href="/contact.html">CONTACT US</a>
-        </nav>
-      </header>
-
-      <main class="main_section main_section__menu_page">
-
-      <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]. "/components/php/"; include($IPATH. "nav.html");  ?>
-    
-        </div>
-    
-        </section>
-
-    <section class="main_page">
-
-        <section class="main_section__menu">
-
-        <div class="menu__title">
-            <h2>This is our Current Menu</h2>
-            <h4>PLEASE NOTE: WE CANNOT OFFER SAME-DAY PRE-ORDERS</h4>
+                    <div class="main_section__nav-list">
+                        <a href="menu.html">
+                            <p>OUR MENU</p>
+                        </a>
+                        <a href="gallery.html">
+                            <p>GALLERY</p>
+                        </a>
+                        <a href="Aboutme.html">
+                            <p>ABOUT ME</p>
+                        </a>
+                        <a href="contact.html" #contactMeBtn >
+                            <p>CONTACT US</p>
+                        </a>
+                        <br>
+                        <a href="menu.html"> <button class="btn btn-side-nav-bar" id="orderBtn">
+                            <p>COMING SOON!</p>
+                            <p> ORDER ONLINE</p>
+                        </button></a>
+                    </div>
+            
+            
+                    
+                </div>
+            
+                <footer class="footer_non-mobile">
+                    <div>
+                            <a class="fab2" href="#" target="_blank"><i class="fab2 fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab2 fab fa-twitter"></i>
+                            </a>
+            
+                            <a href="https://www.instagram.com/sarah_the_bakeress/" target="_blank">
+                                <i class="fab2 fab fa-instagram"></i>
+                            </a>
+                        
+                            <a href="#">
+                                <i class="fab2 far fa-envelope"></i>
+                            </a>
+                    </div>
+                
+                    <!-- <div id="footertext" class="justify-content-center align-items-center flex-row">
+                        <p> © 2020 The Bakeress. All rights reserved. 1.0
+                        </p>
+                    </div> -->
+                        
+                </footer>
+            </div>    
+            </div>
         
-        </div>
-        <hr>
+            </section>
 
-        <div class="menu__menu-items">
+        <section class="main_page">
+
+                <section class="main_section__menu">
+
+                <div class="menu__title">
+                    <h2>This is our Current Menu</h2>
+                    <h4>PLEASE NOTE: WE CANNOT OFFER SAME-DAY PRE-ORDERS</h4>
+                
+                </div>
+                <hr>
+
+                <div class="menu__menu-items">
+                    
+                <div class="menu__menu-items__left">
+                    <li>Croissant<button class="add-to-cart-btn"> + </button></li> 
+                    <li>CheeseCake<button class="add-to-cart-btn"> + </button></li>
+                    <li>Bread<button class="add-to-cart-btn"> + </button></li>
+                    <li>Truffles<button class="add-to-cart-btn"> + </button></li>
+                    <li>Pancakes<button class="add-to-cart-btn"> + </button></li>
+                    <li>Scones<button class="add-to-cart-btn"> + </button></li>
+                    <li>Danish Pastries<button class="add-to-cart-btn"> + </button></li>
+                    <li>cinnamon<button class="add-to-cart-btn"> + </button></li>
+                </div>
+
+                <div class="menu__menu-items__right">
+                    <li>Carrot Cake<button class="add-to-cart-btn"> + </button></li>
+                    <li>New York CheeseCake<button class="add-to-cart-btn"> + </button></li>
+                    <li>Spanish CheeseCake<button class="add-to-cart-btn"> + </button></li>
+                    <li>No Bake CheeseCake<button class="add-to-cart-btn"> + </button></li>
+                    <li>Pecan Pie<button class="add-to-cart-btn"> + </button></li>
+                    <li>Sponge Cake<button class="add-to-cart-btn"> + </button></li>
+                    <li>Chocolate Cake<button class="add-to-cart-btn"> + </button></li>
+                    <li>Lime Cake<button class="add-to-cart-btn"> + </button></li>
+                    
+
+                </div>
+            </section>
+
+            <footer class="footer_mobile">
+                <div>
+                        <a class="fab2" href="#" target="_blank"><i class="fab2 fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab2 fab fa-twitter"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/sarah_the_bakeress/" target="_blank">
+                            <i class="fab2 fab fa-instagram"></i>
+                        </a>
+                    
+                        <a href="#">
+                            <i class="fab2 far fa-envelope"></i>
+                        </a>
+                </div>
             
-        <div class="menu__menu-items__left">
-            <li>Croissant<button class="add-to-cart-btn"> + </button></li> 
-            <li>CheeseCake<button class="add-to-cart-btn"> + </button></li>
-            <li>Bread<button class="add-to-cart-btn"> + </button></li>
-            <li>Truffles<button class="add-to-cart-btn"> + </button></li>
-            <li>Pancakes<button class="add-to-cart-btn"> + </button></li>
-            <li>Scones<button class="add-to-cart-btn"> + </button></li>
-            <li>Danish Pastries<button class="add-to-cart-btn"> + </button></li>
-            <li>cinnamon<button class="add-to-cart-btn"> + </button></li>
-        </div>
-
-        <div class="menu__menu-items__right">
-            <li>Carrot Cake<button class="add-to-cart-btn"> + </button></li>
-            <li>New York CheeseCake<button class="add-to-cart-btn"> + </button></li>
-            <li>Spanish CheeseCake<button class="add-to-cart-btn"> + </button></li>
-            <li>No Bake CheeseCake<button class="add-to-cart-btn"> + </button></li>
-            <li>Pecan Pie<button class="add-to-cart-btn"> + </button></li>
-            <li>Sponge Cake<button class="add-to-cart-btn"> + </button></li>
-            <li>Chocolate Cake<button class="add-to-cart-btn"> + </button></li>
-            <li>Lime Cake<button class="add-to-cart-btn"> + </button></li>
-            
-
-        </div>
-       </section>
-    </section>
-
-    <footer class="footer_mobile">
-        <div>
-                <a class="fab2" href="#" target="_blank"><i class="fab2 fab fa-facebook-f"></i>
-                </a>
-                <a href="#" target="_blank">
-                    <i class="fab2 fab fa-twitter"></i>
-                </a>
-
-                <a href="https://www.instagram.com/sarah_the_bakeress/" target="_blank">
-                    <i class="fab2 fab fa-instagram"></i>
-                </a>
-              
-                <a href="#">
-                    <i class="fab2 far fa-envelope"></i>
-                </a>
-        </div>
-    
-        <!-- <div id="footertext" class="justify-content-center align-items-center flex-row">
-            <p> © 2020 The Bakeress. All rights reserved. 1.0
-            </p>
-        </div> -->
-            
-    </footer>
+                <!-- <div id="footertext" class="justify-content-center align-items-center flex-row">
+                    <p> © 2020 The Bakeress. All rights reserved. 1.0
+                    </p>
+                </div> -->
+                    
+            </footer>
 
 
-</main>
+        </main>
 
-    <script src="/JS/index.js"></script>
+        <script src="/JS/index.js"></script>
 
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </body>
 
 </html>
