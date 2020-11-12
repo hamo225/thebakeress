@@ -43,6 +43,9 @@ a:hover {
 .main {
   display: grid;
   grid-template-columns: 20vw 1fr; }
+  @media only screen and (max-width: 50em) {
+    .main {
+      grid-template-columns: 1fr; } }
 
 /* Menu Page */
 .side-nav {
@@ -51,27 +54,48 @@ a:hover {
   align-items: flex-end;
   text-align: right;
   padding: 1rem; }
+  @media only screen and (max-width: 50em) {
+    .side-nav {
+      flex-direction: row;
+      align-items: center; } }
 
 .side-nav--sticky {
   position: fixed; }
+  @media only screen and (max-width: 50em) {
+    .side-nav--sticky {
+      position: static; } }
 
 .side-nav-inner {
   min-height: 100vh;
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 50em) {
+    .side-nav-inner {
+      min-height: 100%; } }
 
 .topnavbar {
   display: flex;
   flex-direction: column;
   flex: 1;
   margin-top: 1rem; }
+  @media only screen and (max-width: 50em) {
+    .topnavbar {
+      flex-direction: row; } }
 
 .side-nav__list {
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 50em) {
+    .side-nav__list {
+      flex-direction: row;
+      margin: 0 auto; } }
   .side-nav__list > a {
     font-size: 1.7rem;
     margin-top: 2rem; }
+    @media only screen and (max-width: 50em) {
+      .side-nav__list > a {
+        margin-right: 1rem;
+        font-size: 1.5rem; } }
 
 .btn {
   color: green;
@@ -92,6 +116,9 @@ a:hover {
 
 .side-nav__footer {
   padding-bottom: 3rem; }
+  @media only screen and (max-width: 50em) {
+    .side-nav__footer {
+      display: none; } }
   .side-nav__footer a {
     color: #776868; }
     .side-nav__footer a i {
@@ -201,7 +228,7 @@ a:hover {
 
 .main_section__images {
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   padding: 2rem; }
 
@@ -212,27 +239,27 @@ img {
   transition: .5s ease;
   backface-visibility: hidden; }
 
+.image:hover {
+  opacity: 0.4; }
+
 .main_section__items {
   position: relative; }
 
 .middle {
-  transition: .5s ease;
+  transition: .3s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center; }
-
-.image:hover {
-  opacity: 0.3; }
+  text-align: center;
+  z-index: 10; }
 
 .main_section__items:hover .middle {
-  opacity: 1; }
+  opacity: 2; }
 
 .text {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   color: black;
-  font-weight: 600;
-  padding: 16px 32px; }
+  font-weight: 600; }
