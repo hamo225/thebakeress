@@ -124,13 +124,29 @@
 }
 
 .about {
+  display: flex;
+  justify-content: center;
+  padding: 10rem 10rem 10rem;
+  align-items: center;
+
+  & img {
+    width: 50%;
+    border-radius: 15%;
+  }
+
+  & .about__text {
+    padding-right: 5rem;
+    & h2 {
+      font-weight: 300;
+    }
+  }
 }
 
 .main_section__goods {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  padding: 2rem;
+  padding: 5rem 10rem;
 
   & img {
     max-width: 100%;
@@ -138,6 +154,7 @@
     opacity: 1;
     transition: 0.5s ease;
     backface-visibility: hidden;
+    border-radius: 50%;
   }
 
   @media only screen and (max-width: $bp-medium-2) {
@@ -175,12 +192,14 @@
 }
 
 .order {
+  padding: 5rem 10rem;
+  display: flex;
+  justify-content: space-around;
 }
 
-.form {
-}
-
-.contact-form {
+.step {
+  // background-color: bisque;
+  padding: 8rem;
 }
 
 // .main_page {

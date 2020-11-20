@@ -139,17 +139,31 @@ a:hover {
   display: grid;
   grid-template-rows: repeat(7, auto-fit); }
 
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 10rem 10rem 10rem;
+  align-items: center; }
+  .about img {
+    width: 50%;
+    border-radius: 15%; }
+  .about .about__text {
+    padding-right: 5rem; }
+    .about .about__text h2 {
+      font-weight: 300; }
+
 .main_section__goods {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  padding: 2rem; }
+  padding: 5rem 10rem; }
   .main_section__goods img {
     max-width: 100%;
     display: block;
     opacity: 1;
     transition: 0.5s ease;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    border-radius: 50%; }
 
 .image:hover {
   opacity: 0.4; }
@@ -175,6 +189,17 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   font-weight: 600; }
+
+.order {
+  padding: 5rem 10rem;
+  display: flex;
+  justify-content: space-around; }
+
+.step {
+  padding: 8rem; }
+
+.contact-form {
+  padding: 5rem 10rem; }
 
 .inputBox {
   width: 100%;
@@ -186,27 +211,15 @@ a:hover {
   border-color: black;
   background-color: white; }
 
-.contact-form {
-  width: 79%;
-  height: 100%;
-  display: flex;
-  text-align: start;
-  margin-top: 5rem; }
-
-.myContactForm {
-  width: 90%;
-  display: flex;
-  justify-content: center; }
-
 .form button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4CAF50;
+  background: #4caf50;
   width: 100%;
   border: 0;
   padding: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -215,53 +228,4 @@ a:hover {
 .form button:hover,
 .form button:active,
 .form button:focus {
-  background: #43A047; }
-
-.coming-soon {
-  width: 77vw;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center; }
-
-.coming-soon h2 {
-  text-transform: uppercase;
-  font-size: 3vw; }
-
-.main_section__images {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  padding: 2rem; }
-
-img {
-  max-width: 100%;
-  display: block;
-  opacity: 1;
-  transition: 0.5s ease;
-  backface-visibility: hidden; }
-
-.image:hover {
-  opacity: 0.4; }
-
-.main_section__items {
-  position: relative; }
-
-.middle {
-  transition: 0.3s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 10; }
-
-.main_section__items:hover .middle {
-  opacity: 2; }
-
-.text {
-  font-size: 1.5rem;
-  color: black;
-  font-weight: 600; }
+  background: #43a047; }
