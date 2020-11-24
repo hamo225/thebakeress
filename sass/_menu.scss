@@ -146,9 +146,9 @@
     width: 48%;
     margin: 1rem;
 
-    @media only screen and (max-width: $bp-medium-2) {
-      width: 100%;
-    }
+    // @media only screen and (max-width: $bp-medium-2) {
+    //   width: 100%;
+    // }
   }
 
   & .about__text {

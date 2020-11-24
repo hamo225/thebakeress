@@ -160,9 +160,6 @@ a:hover {
   .about img {
     width: 48%;
     margin: 1rem; }
-    @media only screen and (max-width: 50em) {
-      .about img {
-        width: 100%; } }
   .about .about__text {
     padding-right: 5rem; }
     .about .about__text h2 {
