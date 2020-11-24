@@ -120,18 +120,16 @@
   grid-template-rows: repeat(7, auto-fit);
 }
 
-.hero {
-}
-
 .about {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 5rem 10rem 10rem;
+  padding: 5rem 5rem 10rem;
   align-items: center;
 
   & img {
-    width: 50%;
-    border-radius: 15%;
+    width: 48%;
+    margin: 1rem;
   }
 
   & .about__text {
@@ -140,6 +138,18 @@
       font-weight: 300;
     }
   }
+
+  &_images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main__section__title h1,
+.main__section__title {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 5rem;
 }
 
 .main_section__goods {
@@ -186,7 +196,7 @@
 }
 
 .text {
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   color: black;
   font-weight: 600;
 }

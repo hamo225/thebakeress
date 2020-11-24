@@ -42,7 +42,7 @@ a:hover {
 
 .main {
   display: grid;
-  grid-template-columns: 14vw 1fr; }
+  grid-template-columns: 15vw 1fr; }
   @media only screen and (max-width: 50em) {
     .main {
       grid-template-columns: 1fr; } }
@@ -141,16 +141,26 @@ a:hover {
 
 .about {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 5rem 10rem 10rem;
+  padding: 5rem 5rem 10rem;
   align-items: center; }
   .about img {
-    width: 50%;
-    border-radius: 15%; }
+    width: 48%;
+    margin: 1rem; }
   .about .about__text {
     padding-right: 5rem; }
     .about .about__text h2 {
       font-weight: 300; }
+  .about_images {
+    display: flex;
+    flex-wrap: wrap; }
+
+.main__section__title h1,
+.main__section__title {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 5rem; }
 
 .main_section__goods {
   display: grid;
@@ -185,7 +195,7 @@ a:hover {
   opacity: 2; }
 
 .text {
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   color: black;
   font-weight: 600; }
 
@@ -198,33 +208,43 @@ a:hover {
   padding: 8rem; }
 
 .contact-form {
-  padding: 5rem 10rem; }
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .inputBox {
-  width: 100%;
-  margin-top: 10px;
-  padding: 2%; }
+  width: 75vw;
+  margin-top: 1rem;
+  padding: 1rem; }
 
-#sendBtn {
-  border-style: solid;
-  border-color: black;
-  background-color: white; }
+.choicebox {
+  margin-top: 1.3rem;
+  display: flex;
+  align-items: center; }
+  .choicebox input {
+    margin-right: 1rem;
+    width: 4rem; }
 
-.form button {
+.form-group__margin {
+  margin-top: 2rem; }
+
+.contact-form button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4caf50;
-  width: 100%;
+  background: black;
   border: 0;
-  padding: 15px;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 3rem;
   color: #ffffff;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer; }
 
-.form button:hover,
-.form button:active,
-.form button:focus {
-  background: #43a047; }
+.contact-form button:hover,
+.contact-form button:active,
+.contact-form button:focus {
+  background: burlywood; }
