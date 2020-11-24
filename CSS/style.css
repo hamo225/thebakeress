@@ -1,5 +1,5 @@
 :root {
-  --font-family: 'Montserrat'; }
+  --font-family: "Montserrat"; }
 
 *,
 *::before,
@@ -94,7 +94,7 @@ a:hover {
     margin-top: 2rem; }
     @media only screen and (max-width: 50em) {
       .side-nav__list > a {
-        margin-right: 1rem;
+        margin-right: 0rem;
         font-size: 1.5rem; } }
 
 .btn {
@@ -132,8 +132,20 @@ a:hover {
   color: #776868;
   margin-top: 1rem; }
 
-.footer_mobile {
+.footer__mobile {
   display: none; }
+  @media only screen and (max-width: 50em) {
+    .footer__mobile {
+      margin-top: 4rem;
+      background-color: pink;
+      padding: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .footer__mobile i {
+        margin: 0 0.5rem;
+        font-size: 2rem; } }
 
 .main_section {
   display: grid;
@@ -148,6 +160,9 @@ a:hover {
   .about img {
     width: 48%;
     margin: 1rem; }
+    @media only screen and (max-width: 50em) {
+      .about img {
+        width: 100%; } }
   .about .about__text {
     padding-right: 5rem; }
     .about .about__text h2 {
@@ -189,34 +204,41 @@ a:hover {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 10; }
+  z-index: 100; }
 
 .main_section__items:hover .middle {
   opacity: 2; }
 
 .text {
-  font-size: 3.5rem;
+  font-size: 5rem;
   color: black;
   font-weight: 600; }
-
-.order {
-  padding: 5rem 5rem;
-  display: flex;
-  justify-content: space-around; }
-
-.step {
-  padding: 8rem; }
+  @media only screen and (max-width: 50em) {
+    .text {
+      font-size: 3rem; } }
 
 .contact-form {
-  padding: 3rem 5rem;
+  padding: 3rem 10rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
 .inputBox {
-  width: 75vw;
+  width: 100%;
   margin-top: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: none;
+  background-color: #f1f1f1; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield; }
 
 .choicebox {
   margin-top: 1.3rem;
@@ -224,7 +246,11 @@ a:hover {
   align-items: center; }
   .choicebox input {
     margin-right: 1rem;
-    width: 4rem; }
+    width: 3rem;
+    padding: 2px;
+    text-align: center;
+    border: none;
+    background-color: #f1f1f1; }
 
 .form-group__margin {
   margin-top: 2rem; }

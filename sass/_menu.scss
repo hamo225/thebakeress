@@ -57,7 +57,7 @@
     margin-top: 2rem;
 
     @media only screen and (max-width: $bp-medium-2) {
-      margin-right: 1rem;
+      margin-right: 0rem;
       font-size: 1.5rem;
     }
   }
@@ -110,8 +110,23 @@
   margin-top: 1rem;
 }
 
-.footer_mobile {
+.footer__mobile {
   display: none;
+
+  @media only screen and (max-width: $bp-medium-2) {
+    margin-top: 4rem;
+    background-color: pink;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & i {
+      margin: 0 0.5rem;
+      font-size: 2rem;
+    }
+  }
 }
 
 // MENU SECTION OF PAGE
@@ -130,6 +145,10 @@
   & img {
     width: 48%;
     margin: 1rem;
+
+    @media only screen and (max-width: $bp-medium-2) {
+      width: 100%;
+    }
   }
 
   & .about__text {
@@ -164,7 +183,6 @@
     opacity: 1;
     transition: 0.5s ease;
     backface-visibility: hidden;
-    // border-radius: 50%;
   }
 
   @media only screen and (max-width: $bp-medium-2) {
@@ -188,7 +206,10 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 10;
+  z-index: 100;
+
+  @media only screen and (max-width: $bp-medium-2) {
+  }
 }
 
 .main_section__items:hover .middle {
@@ -196,64 +217,10 @@
 }
 
 .text {
-  font-size: 3.5rem;
+  font-size: 5rem;
   color: black;
   font-weight: 600;
+  @media only screen and (max-width: $bp-medium-2) {
+    font-size: 3rem;
+  }
 }
-
-.order {
-  padding: 5rem 5rem;
-  display: flex;
-  justify-content: space-around;
-}
-
-.step {
-  // background-color: bisque;
-  padding: 8rem;
-}
-
-// .main_page {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .main_section__menu {
-//   display: flex;
-//   min-height: 100vh;
-//   flex-direction: column;
-//   text-align: center;
-//   background-color: rgb(235, 238, 240);
-//   padding: 2rem 5rem 5rem 5rem;
-// }
-
-// .menu__title {
-//   margin: 8rem;
-// }
-
-// .menu__items {
-//   //Use a 4 x 4 grid
-//   display: grid;
-//   grid-template-columns: repeat(4, 1fr);
-//   column-gap: 2rem;
-//   row-gap: 1rem;
-// }
-
-// .menu__items li {
-//   padding: 3rem;
-//   list-style: none;
-//   line-height: 2rem;
-//   font-size: 1.4rem;
-//   font-weight: 500;
-//   border-radius: 5px;
-//   border: solid;
-//   border-width: 1px;
-//   border-color: gray;
-// }
-
-// .menu__items li:hover {
-//   color: white;
-//   background-color: #43a047;
-//   cursor: pointer;
-//   transform: scale(1.1);
-//   transition: ease 0.3s;
-// }
