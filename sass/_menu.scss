@@ -36,12 +36,12 @@
     top: 6rem;
     right: 6.5rem;
     z-index: 0;
-    // transform: scale(70);
+    transform: scale(70);
     transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1);
   }
 
   &__nav {
-    height: 113vh;
+    height: 114vh;
     position: fixed;
     top: 0em;
     left: 0em;
@@ -75,21 +75,6 @@
       font-weight: 300;
       color: black;
       text-transform: uppercase;
-      background-image: linear-gradient(
-        120deg,
-        transparent 0%,
-        transparent 50%,
-        pink 50%
-      );
-
-      background-size: 240%;
-      transition: all 0.4s;
-    }
-
-    &:hover,
-    &:active {
-      background-position: 99%;
-      transform: translateX(1rem);
     }
   }
 
@@ -103,8 +88,9 @@
     width: 100%;
   }
 
-  &__checkbox:checked ~ &__background {
-    transform: scale(80);
+  &__link:checked ~ &__nav {
+    opacity: 0;
+    width: 0;
   }
 
   // the icon
