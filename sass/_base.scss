@@ -41,6 +41,13 @@ body {
   text-transform: uppercase;
 }
 
+.heading-3 {
+  line-height: 20px;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
 a:link {
   text-decoration: none;
   color: black;
@@ -54,4 +61,8 @@ a:visited {
 a:hover {
   color: gray;
   text-decoration: none;
+}
+
+.margin-top {
+  margin-top: 2rem;
 }
