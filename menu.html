@@ -22,90 +22,32 @@
   </head>
 
   <body>
+    <header class="header">
+      <h2 class="logo">The Bakeress</h2>
+      <ul>
+        <li>Menu</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Order</li>
+        <li>FAQ</li>
+      </ul>
+    </header>
     <main class="main">
-      <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon"> &nbsp; </span>
-        </label>
-
-        <div class="navigation__background">&nbsp;</div>
-
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="/menu.html#about" class="navigation__link">About</a>
-            </li>
-            <li class="navigation__item">
-              <a href="/menu.html#menu" class="navigation__link">Menu</a>
-            </li>
-            <li class="navigation__item">
-              <a href="/menu.html#contact" class="navigation__link">Contact</a>
-            </li>
-            <li class="navigation__item">
-              <a href="/menu.html#contact" class="navigation__link">Order</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <section class="side-nav">
-        <div class="side-nav--sticky">
-          <div class="side-nav-inner">
-            <div class="topnavbar">
-              <p>
-                <a href="index.html" class="heading-1">THE <br />BAKERESS</a>
-              </p>
-
-              <div class="side-nav__list">
-                <a href="/menu.html#menu"> MENU </a>
-                <!-- <a href="gallery.html"> GALLERY </a> -->
-                <a href="menu.html#about"> ABOUT</a>
-                <a href="menu.html#contact" #contactMeBtn> CONTACT</a>
-                <br class="break-mobile" />
-                <a href="menu.html#contact">
-                  <button class="btn">ORDER</button></a
-                >
-              </div>
-            </div>
-
-            <footer class="side-nav__footer">
-              <div>
-                <a class="fab2" href="#" target="_blank"
-                  ><i class="fab2 fab fa-facebook-f"></i>
-                </a>
-                <a href="#" target="_blank">
-                  <i class="fab2 fab fa-twitter"></i>
-                </a>
-
-                <a
-                  href="https://www.instagram.com/sarah_the_bakeress/"
-                  target="_blank"
-                >
-                  <i class="fab2 fab fa-instagram"></i>
-                </a>
-
-                <a href="#">
-                  <i class="fab2 far fa-envelope"></i>
-                </a>
-              </div>
-
-              <div class="footer__text">
-                <p>© 2020 The Bakeress. V.1.0</p>
-              </div>
-            </footer>
-          </div>
+      <section class="heroImage">
+        <div class="heroImage__overlay"></div>
+        <div class="heroImage__text">
+          <h1>FANCY A Cheesecake?</h1>
+          <button>SHOP NOW</button>
         </div>
       </section>
-      <section class="main_section">
-        <section class="about" id="about">
-          <div class="about__text">
-            <h1 class="heading-2 page-title">Hello, Im Sarah 👩🏻‍🍳</h1>
+      <section class="main__section">
+  
+      <div class="mainSection__text">
             <p>
-              🌻 A bit about myself. As a kid I grew up watching my mom bake
+              A bit about myself. As a kid I grew up watching my mom bake
               desserts all the time & I used to sit and wait around for her to
               pour the batter into the tin so I could have the bowl to lick
-              clean myself 😋. I also loved it when I was given a chance to be
+              clean myself. I also loved it when I was given a chance to be
               in her kitchen and bake something new that she had not tried
               before. Its when I felt very proud and happy.
             </p>
@@ -116,7 +58,7 @@
               In the past couple of years, I started baking again and this
               kid-like happy and excited feeling came right back to me and I
               knew I needed to take some time off and do nothing but bake and
-              “clean” some bowls 😄.
+              “clean” some bowls.
             </p>
             <br />
             <p>
@@ -124,52 +66,24 @@
               school in Edinburgh. Where I learnt to make soooo many delicious
               and wondeful desserts and bread.
             </p>
-
-            <figure>
-              <img src="/Gallery/Bread and butter.JPG" alt="" />
-              <img src="/Gallery/Foccacia Bread from Top.JPG" alt="" />
-              <img src="/Gallery/Chocolate pastry.JPG" alt="" />
-              <img src="/Gallery/Chocolate Truffles.JPG" alt="" />
-              <img src="/Gallery/Pastry Plate 1.JPG" alt="" />
-              <img src="/Gallery/Pancake.JPG" alt="" />
-              <img src="/Gallery/Croissant.JPG" alt="" />
-              <img src="/Gallery/Pastry Plate 2.JPG" alt="" />
-            </figure>
-
-            <br />
             <p>
               For now I bake traditional
-              <span class="heading-3">New York Cheesecake</span> and
-              <span class="heading-3">Spanish Burn Cheesecake.</span>
+              <span >New York Cheesecake</span> and
+              <span >Spanish Burn Cheesecake.</span>
             </p>
-
-            <p class="margin-top">
-              <span class="heading-3">How to Order:</span>
+            <p>
+              <span>How to Order:</span>
               Fill out the order form at the bottom at least 72 hours before you
               need it delivered. Payment is done via Paypal (the link will be
               sent to you with your confirmation email).
             </p>
-          </div>
+      </div>
+      <div class="mainSection__image">
+        <img src="/Gallery/IMG_6956.jpg" alt="">
+      </div>
         </section>
 
-        <div class="main__section__title">
-          <h1 id="menu">PRODUCTS</h1>
-          <section class="main_section__goods">
-            <div class="main_section__items">
-              <img class="image" src="/Gallery/IMG_6955.jpg" />
-              <div class="middle">
-                <div class="text">New York Cheesecake</div>
-              </div>
-            </div>
-
-            <div class="main_section__items">
-              <img class="image" src="/Gallery/IMG_6966.jpg" />
-              <div class="middle">
-                <div class="text">Spanish Cheesecake</div>
-              </div>
-            </div>
-          </section>
-        </div>
+       
 
         <h1 class="main__section__title" id="contact">ORDER FORM</h1>
         <section class="contact-form">

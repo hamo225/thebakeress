@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; //1200px
 $bp-medium: 62.5em; //1000px
@@ -6,7 +8,7 @@ $bp-small: 37.5em; //600px
 $bp-xsmall: 25em; //400px
 
 :root {
-  --font-family: "Montserrat";
+  --font-family: "Open Sans";
 }
 
 *,

@@ -1,0 +1,35 @@
+.main {
+  & .heroImage {
+    background: url(/Gallery/IMG_6956.jpg);
+    height: 100vh;
+  }
+
+  & .main__section {
+    display: flex;
+    width: 80%;
+    margin: 10rem auto;
+
+    & .mainSection__text {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & p {
+        font-size: 2rem;
+        margin: 1rem;
+      }
+    }
+
+    & .mainSection__image {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & img {
+        width: 70%;
+      }
+    }
+  }
+}
