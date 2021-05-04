@@ -4,7 +4,7 @@
     height: 100vh;
   }
 
-  & .main__section {
+  & .mainSection {
     display: flex;
     width: 80%;
     margin: 10rem auto;
@@ -19,6 +19,7 @@
       & p {
         font-size: 2rem;
         margin: 1rem;
+        font-weight: 100;
       }
     }
 
@@ -29,6 +30,44 @@
       align-items: center;
       & img {
         width: 70%;
+      }
+    }
+
+    &__howItWorks {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      width: 90%;
+      margin: 0 auto;
+      height: 50vh;
+
+      & .howItWorks__steps {
+        display: flex;
+        justify-content: space-evenly;
+
+        & .howItWorks__item {
+          padding: 2rem;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-direction: column;
+
+          & h2 {
+            text-transform: uppercase;
+            margin-top: 2rem;
+          }
+          & .howItWorks__icon {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }

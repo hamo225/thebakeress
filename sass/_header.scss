@@ -1,26 +1,26 @@
 .header {
-  //   background-color: grey;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 15vh;
 
   & .logo {
-    // background-color: blue;
     width: 10%;
-    font-size: 3rem;
     height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 100;
-    text-transform: uppercase;
+
+    & h2 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
   }
 
   & ul {
     display: flex;
     width: 50%;
-    // background-color: yellow;
     justify-content: space-evenly;
     height: 80%;
     align-items: center;
@@ -36,5 +36,10 @@
         transition: all ease 0.4s;
       }
     }
+  }
+
+  & i {
+    font-size: 2rem;
+    cursor: pointer;
   }
 }
